@@ -52,7 +52,7 @@ header {
 }
 
 header.sticky {
-	background: var(--primary-black-glass);
+	background: var(--primary);
 	backdrop-filter: blur(0.8px);
 	transition: 0.7s;
 }
@@ -282,4 +282,35 @@ header nav ul li a.active {
     color: var(--primary2);
     font-weight: bold;
     margin-bottom: 0;
+}
+
+#mission{
+	background: linear-gradient(180deg, #3F7434, #3E6A35);
+	padding-bottom: var(--section-padding);
+	padding-top: var(--section-padding);
+	color: var(--primary-white);
+}
+
+.mission-image{
+	border-radius: 32px;
+	position: relative;
+
+}
+
+.mission-image img{
+	height: 400px;
+	border-radius: 32px;
+}
+
+footer{
+	height: 300px;
+	width: 100%;
+	background-color: var(--primary-black);
+}
+
+.footer-large-heading{
+	font-weight: 900;
+	color: #fffefe3e;
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
 }
