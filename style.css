@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	font-family: 'Inter', sans-serif;
+	/*border: dashed;
+    border-width: 1px;*/
+    margin: 0;
+    padding: 0;
+}
+
+p {
+	line-height: 20.58px;
+	margin-bottom: 0;
+}
+
+:root {
+	--primary-white: #fffefe;
+	--primary-black-glass: #161916d6;
+	--primary-black-glass2: #050505da;
+	--primary-white-glass: #fffefe80;
+	--primary-white-glass2: #fffefeef;
+	--primary-black: #1e1e1e;
+	--primary-dark: #023909;
+	--primary-dark2: #000A01;
+	--primary: #3E6A35;
+	--primary2: #C0EC7B;
+	--primary3: #05d31f;
+	--primary4: #6fca3a;
+	--primary5: #59a52c;
+
+    --section-padding:56px;
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	padding: 0 4%;
+	color: var(--primary-black);
+	background: var(--primary);
+	width: 100%;
+	box-sizing: border-box;
+	transition: 0.7s;
+	z-index: 200;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.sticky {
+	background: var(--primary-black-glass);
+	backdrop-filter: blur(0.8px);
+	transition: 0.7s;
+}
+
+header .logo {
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left;
+	padding-top: 5px;
+	cursor: pointer;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul {
+	margin: 0;
+	margin-top: 0px;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li {
+	list-style: none;
+	position: relative;
+}
+
+header nav ul li.sub-menu:before
+
+/*this is the triangle for dropdown menu*/
+	{
+	content: '\f0d7 ';
+	font-family: fontAwesome;
+	position: absolute;
+	line-height: 60px;
+	color: var(--primary-white);
+	right: 5px;
+}
+
+header nav ul li.active.sub-menu:before {
+	content: '\f0d8';
+}
+
+header nav ul li ul {
+	position: absolute;
+	left: 0;
+	background: rgb(34, 34, 34);
+	display: none;
+}
+
+header nav ul li.active ul {
+	display: block;
+}
+
+header nav ul li ul li {
+	display: block;
+	width: 240px;
+}
+
+header nav ul li a {
+	padding: 0 20px;
+	color: var(--primary-white);
+	text-decoration: none;
+	display: block;
+	font-weight: 700;
+}
+
+header nav ul li a:hover {
+	color: var(--primary-white);
+	background: var(--primary3);
+	transition: 0.8s;
+}
+
+header nav ul li a.active {
+	color: var(--primary-white);
+	transition: 0.8s;
+	border-bottom: px solid rgba(191, 0, 0, 0.741) !important;
+}
+
+.active:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 22px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--primary2);
+}
+
+.menu-toggle {
+	color: var(--primary-black);
+	float: right;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+	height: 60px;
+	line-height: 0;
+	padding: 0 !important;
+}
+
+@media (max-width: 990px) {
+	header {
+		padding: 0 20px;
+	}
+
+	.menu-toggle {
+		display: block;
+		background-color: #ffffff00 !important;
+		color: var(--primary-white) !important;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		margin-top: 5px;
+	}
+
+	header nav {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: var(--primary-black-glass2);
+		top: 60px;
+		left: -100%;
+		transition: 0.5s;
+	}
+
+	header nav.active {
+		left: 0%;
+	}
+
+	header nav ul {
+		display: block;
+		text-align: center;
+	}
+
+	header nav ul li a {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	header nav ul li.active ul {
+		position: relative;
+		background: #1b1b1b;
+	}
+
+	header nav ul li ul li {
+		width: 100%;
+	}
+}
+
+#banner{
+    height: 600px;
+    width: 100%;
+    background-color: #000A01;
+    background-image: url(./images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-container{
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+ 
+}
+
+.banner-coontainer{
+    height: 100%;
+    background-color: #000a0184;
+    display: grid;
+    align-self: center;
+}
+
+.heading{
+    font-weight: bold;
+}
+
+.heading:after{
+
+}
+
+.cl-white{
+    color: var(--primary-white);
+}
+.headin-line{
+    width: 100px;
+    height: 4px;
+    background-color: var(--primary2);
+}
+
+.heading{
+    margin-bottom: 0;
+}
+
+.heading-c{
+    margin-bottom: 16px;
+    width: fit-content;
+}
+#services{
+    align-items: center;
+    width: 100%;
+    background-color:var(--primary-black);
+    display: flex;
+    flex-direction: column;
+    padding-top:var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.service{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-white);
+}
+
+.service-icon {
+	font-size: 64px;
+	color: var(--primary2);
+	margin-right: 16px;
+	margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.sercice-heading{
+    color: var(--primary2);
+    font-weight: bold;
+    margin-bottom: 0;
+}
