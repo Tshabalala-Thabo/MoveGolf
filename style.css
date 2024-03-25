@@ -346,6 +346,13 @@ header nav ul li a.active {
     border-radius: 8px;
 }
 
+.left-abt {
+    width: 100%;
+    height: 500px;
+    background: url(./images/golfer-hit-sweeping-driver-after-600nw-2273318515.webp) no-repeat center / cover;
+    border-radius: 8px;
+}
+
 .right {
     width: 60%;
     min-height: 350px;
@@ -727,6 +734,13 @@ header nav ul li a.active {
     .w50{
         width: 100%;
     }
+}
+
+#about-us{
+    width: 100%;
+    background-color: var(--primary-black);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 footer {
