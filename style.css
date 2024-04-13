@@ -64,11 +64,11 @@ header.sticky {
 
 header .logo {
     color: #fff;
-    height: 50px;
     line-height: 50px;
     font-size: 24px;
     float: left;
-    padding-top: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
     cursor: pointer;
 }
 
@@ -251,7 +251,7 @@ header nav ul li a.active {
     display: grid;
     align-self: center;
     text-align: center;
-    background-color: var(--primary-dark);
+    background-color: var(--primary-black);
     color: var(--primary-white);
 }
 
