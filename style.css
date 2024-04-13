@@ -1,7 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: ebrim;
+    src: url('./Fonts/Wording/ebrima.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: biggerside-ex;
+    src: url('./Fonts/MoveGolf/BigersideExpanded-7O9Z4.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: ebrim;
     /*border: dashed;
     border-width: 1px;*/
     margin: 0;
@@ -29,8 +41,12 @@ p {
     --primary-brown2: #BFB08F;
     --primary-brown3: #D4CAB5;
     --primary-brown3: #E9E5DB;
-
     --primary-orange: #E8844C;
+
+    --mg-green: rgb(22, 90, 0);
+    --mg-green2: rgb(67, 123, 73);
+    --mg-orange: #E33200;
+    --mg-brown: rgb(207, 188, 147);
 
     --section-padding: 64px;
 }
@@ -56,7 +72,7 @@ header {
 }
 
 header.sticky {
-    background: var(--primary);
+    background: var(--mg-green);
     backdrop-filter: blur(0.8px);
     transition: 0.7s;
     height: 60px;
@@ -129,12 +145,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--primary2);
+    color: var(--mg-brown);
     transition: 0.8s;
 }
 
 header nav ul li a.active {
-    color: var(--primary2);
+    color: var(--mg-brown);
     transition: 0.8s;
     border-bottom: px solid rgba(191, 0, 0, 0.741) !important;
 }
@@ -146,7 +162,7 @@ header nav ul li a.active {
     top: 24px;
     height: 4px;
     width: 100%;
-    background-color: var(--primary2);
+    background-color: var(--mg-brown);
 }
 
 .menu-toggle {
@@ -238,6 +254,10 @@ header nav ul li a.active {
 
 }
 
+.bttn-primary{
+    background-color: var(--mg-brown) !important;
+}
+
 .banner-coontainer {
     height: 100vh;
     background-color: #000a0184;
@@ -269,10 +289,14 @@ header nav ul li a.active {
     color: var(--primary-white);
 }
 
+.cl-brown {
+    color: var(--mg-brown);
+}
+
 .headin-line {
     width: 100px;
     height: 4px;
-    background-color: var(--primary2);
+    background-color: var(--mg-orange);
 }
 
 .heading {
@@ -301,7 +325,7 @@ header nav ul li a.active {
     /*text-align: center;*/
     color: var(--primary-white);
     /*background-color: var(--primary);*/
-    background: linear-gradient(180deg, #3F7434, #3E6A35);
+    background-color: var(--mg-green);
     padding: 26px;
     border-radius: 8px;
     height: 100%;
@@ -309,14 +333,14 @@ header nav ul li a.active {
 
 .service-icon {
     font-size: 64px;
-    color: var(--primary2);
+    color: var(--mg-brown);
     margin-right: 16px;
     margin-left: 16px;
     margin-bottom: 16px;
 }
 
 .sercice-heading {
-    color: var(--primary2);
+    color: var(--mg-brown);
     font-weight: 800;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -357,7 +381,7 @@ header nav ul li a.active {
     width: 60%;
     min-height: 350px;
     background-color: #303137;
-    background: linear-gradient(180deg, #3F7434, #3E6A35);
+    background: var(--mg-green);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -491,7 +515,7 @@ header nav ul li a.active {
     width: 450px;
     height: calc(100% - 80px);
     border-radius: 8px;
-    background-color: var(--primary);
+    background-color: var(--mg-green2);
     z-index: 1;
     padding: 32px;
     display: flex;
@@ -516,7 +540,7 @@ header nav ul li a.active {
     height: 100%;
     background-color: var(--primary-dark);
     border-radius: 8px;
-    color: var(--primary);
+    color: var(--mg-green);
 }
 
 .c-back {
@@ -753,6 +777,7 @@ footer {
 .footer-large-heading {
     font-weight: 900;
     color: #fffefe3e;
+    font-family: biggerside-ex;
 }
 
 .footer-icon {

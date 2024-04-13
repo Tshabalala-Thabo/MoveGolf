@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts | MoveGolf</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <img src="./images/Move_Golf_-_Logo_Design_-_Green_Logo-removebg-preview.png" width="200px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!--li class="sub-menu"><a href="#">Services</a>
+                        <ul>
+                            <li><a href="liveperformance.html">Live Performance</a></li>
+                            <li><a href="publicrelations.html">Public Relations</a></li>
+                            <li><a href="infromationtechnology.html">Information Technology</a></li>
+                            <li><a href="hospitality.html">Hospitality</a></li>
+                        </ul>
+                    </!--li-->
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </header>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0)
+            })
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.menu-toggle').click(function () {
+                    $('nav').toggleClass('active')
+                })
+                $('ul li').click(function () {
+                    $(this).siblings().removeClass('active')
+                    $(this).toggleClass('active')
+                })
+            })
+        </script>
+
+        <section id="contacts-banner">
+            <div class="contacts-banner-inner">
+                <div class="container">
+                    <div class="heading-c" style="margin: auto; margin-top: 40px;">
+                        <h2 class="heading cl-white">About us</h2>
+                        <div class="headin-line"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <p style="color: #fffefe;
+                            margin-top: 16px; text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+                                    consectetur corporis ipsam repellendus, cum ad doloremque rem reprehenderit rerum
+                                    hic nesciunt magnam quidem dolorum aliquam. Accusantium fugit odit mollitia
+                                    provident!</p>
+
+                                    <p style="color: #fffefe;
+                            margin-top: 16px; text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+                                    consectetur corporis ipsam repellendus, cum ad doloremque rem reprehenderit rerum
+                                    hic nesciunt magnam quidem dolorum aliquam. Accusantium fugit odit mollitia
+                                    provident!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+       
+        <section id="about-us">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 mission-inner">
+                        <div class="m-container">
+                            <div class="left-abt"></div>
+                            <div class="right">
+                                <div class="content">
+                                    <div class="heading-c">
+                                        <h2 class="heading cl-brown">Vision</h2>
+                                        <div class="headin-line"></div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda dolore
+                                        reprehenderit ullam blanditiis ex sapiente pariatur tempore incidunt facilis?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="main-container">
+            <div class="row" style="row-gap: 16px;">
+                <div class="col-12 col-md-3">
+                    <h1 class="footer-large-heading">MoveGolf</h1>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="heading-c">
+                        <h4 class="heading cl-white">Follow us</h4>
+                        <div class="headin-line"></div>
+                    </div>
+                    <div style="display: flex;">
+                        <ion-icon class="footer-icon" name="logo-facebook"></ion-icon>
+                        <p class="footer-items">Move Golf</p>
+                    </div>
+                    <div style="display: flex;">
+                        <ion-icon class="footer-icon" name="logo-instagram"></ion-icon>
+                        <p class="footer-items">@MoveGolf</p>
+                    </div>
+                    <div style="display: flex;">
+                        <ion-icon class="footer-icon" name="logo-youtube"></ion-icon>
+                        <p class="footer-items">Move Golf SA</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="heading-c">
+                        <h4 class="heading cl-white">Customer service</h4>
+                        <div class="headin-line"></div>
+                    </div>
+                    <p>Monday - Friday</p>
+                    <p>08:00am - 05:00pm</p>
+                    <p>info@movegolf.co.za</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="heading-c">
+                        <h4 class="heading cl-white">Pages</h4>
+                        <div class="headin-line"></div>
+                    </div>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Products</li>
+                        <li>Gallery</li>
+                        <li>Contacts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-second">
+            <div class="main-container">
+                <div style="text-align: end;">
+                    © 2024, Move Golf
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
