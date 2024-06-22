@@ -1,6 +1,6 @@
 <?php
 
-$mode = "prod";
+$mode = "prod.";
 
 if ($mode === 'prod') {
     $db_name = 'mysql:host=localhost;dbname=movegolf_db';
@@ -9,7 +9,7 @@ if ($mode === 'prod') {
     $conn = new PDO($db_name, $user_name, $user_password);
 } else {
 
-    $db_name = 'mysql:host=localhost;dbname=shop_db';
+    $db_name = 'mysql:host=localhost;dbname=movegolf_db';
     $user_name = 'root';
     $user_password = '';
     $conn = new PDO($db_name, $user_name, $user_password);
