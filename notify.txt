@@ -1,0 +1,69 @@
+Is a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2Is a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2Is a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2Is a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2\norder placed successfully! \nIs a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2\norder placed successfully! \nIs a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2\norder placed successfully! \nIs a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2\norder placed successfully! \nIs a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2Is a valid signature
+Is a valid IP
+Is a valid Data
+Is a valid confirmation
+All checks have passed, the payment is successful 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2Order placed successfully!
+Is a valid signature
+Is a valid IP
+Is not a valid Data
+Is a valid confirmation
+ Some checks have failed, check payment manually and log for investigation 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2Order placed successfully!
+Is a valid signature
+Is a valid IP
+Is not a valid Data
+Is a valid confirmation
+ Some checks have failed, check payment manually and log for investigation 7
+2024-05-26 12:30:00email: mncedisi@movegolf.co.za
+user id: 2Order placed successfully!
