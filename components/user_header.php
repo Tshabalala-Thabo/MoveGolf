@@ -15,13 +15,13 @@ if (isset($message)) {
 
    <section class="container flex">
 
-      <a href="home.php" class="logo"> <img src="./images/logo.png" width="200px"></span></a>
+      <a href="home.php" class="logo"> <img src="./images/logo.png" width="300px"></span></a>
 
       <nav class="navbar">
          <a href="home.php">Home</a>
          <a href="about.php">About Us</a>
          <a href="shop.php">Products</a>
-         <a href="orders.php">Orders</a>
+         <!--a href="orders.php">Orders</!--a-->
          <a href="gallery.php">Gallery</a>
          <a href="contact.php">Contact Us</a>
       </nav>
