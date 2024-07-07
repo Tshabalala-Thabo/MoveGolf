@@ -551,10 +551,12 @@
 .product {
     width: 100%;
     color: var(--primary-white);
+    text-align: center;
     height: 100%;
 }
 
 .product-image {
+    height: 300px;
     width: 100%;
     background-color: var(--primary-white);
     margin-bottom: 8px;
