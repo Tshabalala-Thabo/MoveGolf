@@ -94,18 +94,18 @@ include 'components/wishlist_cart.php';
                                     // Generate full stars
                                     $full_stars = floor($rating);
                                     for ($i = 0; $i < $full_stars; $i++) {
-                                       $stars_html .= '<ion-icon name="star" style="margin-top: 4px;"></ion-icon>';
+                                       $stars_html .= '<ion-icon class="yellow-stars" name="star" style="margin-top: 4px;"></ion-icon>';
                                     }
 
                                     // Generate half star if needed
                                     if ($rating - $full_stars >= 0.5) {
-                                       $stars_html .= '<ion-icon name="star-half" style="margin-top: 4px;"></ion-icon>';
+                                       $stars_html .= '<ion-icon class="yellow-stars" name="star-half" style="margin-top: 4px;"></ion-icon>';
                                     }
 
                                     // Generate empty stars to fill up to 5 stars
                                     $empty_stars = 5 - ceil($rating);
                                     for ($i = 0; $i < $empty_stars; $i++) {
-                                       $stars_html .= '<ion-icon name="star-outline" style="margin-top: 4px;"></ion-icon>';
+                                       $stars_html .= '<ion-icon class="yellow-stars" name="star-outline" style="margin-top: 4px;"></ion-icon>';
                                     }
 
                                     echo $stars_html;

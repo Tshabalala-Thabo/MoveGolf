@@ -888,7 +888,6 @@ h2{
 .cart-total {
    max-width: 50rem;
    margin: 0 auto;
-   margin-top: 3rem;
    background-color: var(--white);
    border: var(--border);
    border-radius: 8px;
@@ -1074,6 +1073,13 @@ h2{
 
 
 
+.yellow-stars{
+ color: orange;
+}
+
+.add-to-cart{
+   margin-top: 16px;
+}
 
 @media (max-width:991px) {}
 
@@ -1115,6 +1121,18 @@ h2{
 
 }
 
+@media (max-width:576px) {
+   .logo img{
+      width: 200px;
+   }
+   .header .flex .profile {
+   right: 0;
+   margin-right: 3vw;
+   width: 90vw;
+   }
+}
+
+
 @media (max-width:450px) {
 
 
@@ -1126,9 +1144,12 @@ h2{
       flex-flow: column;
       gap: 0;
    }
+   .quick-view form .row .image-container .sub-image{
+      gap: 0;
+   }
 
    .quick-view form .row .image-container .sub-image img {
-      width: 8rem;
+      width: calc(100%- 16px);
    }
 
    .checkout-orders form .flex .inputBox {

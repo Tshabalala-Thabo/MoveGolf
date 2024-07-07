@@ -60,8 +60,8 @@ if (isset($_POST['update_qty'])) {
       <div class="container">
          <h3 class="cl-white">Shopping cart</h3>
 
-         <div class="row">
-            <div class="col-8">
+         <div class="row" style="row-gap: 16px;">
+            <div class="col-12 col-md-6">
                <div class="row justify-content-center">
 
                   <?php
@@ -71,7 +71,7 @@ if (isset($_POST['update_qty'])) {
                   if ($select_cart->rowCount() > 0) {
                      while ($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)) {
                   ?>
-                        <div class="col-6">
+                        <div class="">
                            <div class="box-container">
                               <form action="" method="post" class="box">
                                  <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>">
@@ -105,7 +105,7 @@ if (isset($_POST['update_qty'])) {
                </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-md-6">
                <div class="cart-total">
                   <p>Grand Total : <span>R<?= $grand_total; ?></span></p>
                   <a href="checkout.php" class="btn bttn-primary <?= ($grand_total > 1) ? '' : 'disabled'; ?>">Proceed to checkout</a>

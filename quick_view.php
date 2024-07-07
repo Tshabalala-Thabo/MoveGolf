@@ -55,7 +55,7 @@ include 'components/wishlist_cart.php';
                   <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
                   <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
                   <div class="row">
-                     <div class="image-container col-12 col-md-7">
+                     <div class="image-container col-12 col-lg-7">
                         <div class="main-image">
                            <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
                         </div>
@@ -65,17 +65,48 @@ include 'components/wishlist_cart.php';
                            <img src="uploaded_img/<?= $fetch_product['image_03']; ?>" alt="">
                         </div>
                      </div>
-                     <div class="content col-12 col-md-5">
+                     <div class="content col-12 col-lg-5">
                         <div class="name">
                            <h2><?= $fetch_product['name']; ?></h2>
                         </div>
                         <div class="d-flex" style="align-self: center;">
-                           <ion-icon name="star" style="margin-top: 4px;"></ion-icon>
-                           <ion-icon name="star" style="margin-top: 4px;"></ion-icon>
-                           <ion-icon name="star" style="margin-top: 4px;"></ion-icon>
-                           <ion-icon name="star" style="margin-top: 4px;"></ion-icon>
-                           <ion-icon name="star" style="margin-top: 4px;"></ion-icon>
-                           <p style="margin-left: 8px;"> <?=$fetch_product['no_reviews']?> reviews</p>
+                           <?php
+
+                           $stars_html = '';
+                           $rating = $fetch_product['stars'];
+
+                           // Validate rating value to be between 0 and 5
+                           $rating = floatval($rating);
+                           if ($rating < 0) {
+                              $rating = 0;
+                           } elseif ($rating > 5) {
+                              $rating = 5;
+                           }
+
+                           // Round to the nearest half-star
+                           $rating = round($rating * 2) / 2;
+
+                           // Generate full stars
+                           $full_stars = floor($rating);
+                           for ($i = 0; $i < $full_stars; $i++) {
+                              $stars_html .= '<ion-icon class="yellow-stars" name="star" style="margin-top: 4px;"></ion-icon>';
+                           }
+
+                           // Generate half star if needed
+                           if ($rating - $full_stars >= 0.5) {
+                              $stars_html .= '<ion-icon class="yellow-stars" name="star-half" style="margin-top: 4px;"></ion-icon>';
+                           }
+
+                           // Generate empty stars to fill up to 5 stars
+                           $empty_stars = 5 - ceil($rating);
+                           for ($i = 0; $i < $empty_stars; $i++) {
+                              $stars_html .= '<ion-icon class="yellow-stars" name="star-outline" style="margin-top: 4px;"></ion-icon>';
+                           }
+
+                           echo $stars_html;
+
+                           ?>
+                           <p style="margin-left: 8px;"> <?= $fetch_product['no_reviews'] ?> reviews</p>
                         </div>
                         <div class="details"><?= $fetch_product['details']; ?></div>
                         <div class="flex">

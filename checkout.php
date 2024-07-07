@@ -109,45 +109,45 @@ if (isset($_POST['order'])) { //then save the data into session variables
             <h3>Shipping address</h3>
 
             <div class="row">
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Name</span>
                   <input type="text" name="name" placeholder="Name" class="box" maxlength="20" required>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Phone number :</span>
                   <input type="number" name="number" placeholder="Phone number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Email </span>
                   <input type="email" name="email" placeholder="Email" class="box" maxlength="50" required>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Payment method</span>
                   <select name="method" class="box" required>
                      <option value="cash on delivery">Online payment</option>
                   </select>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Address line 1</span>
                   <input type="text" name="flat" placeholder="e.g. Flat number" class="box" maxlength="50" required>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Address line 2</span>
                   <input type="text" name="street" placeholder="Street name" class="box" maxlength="50" required>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>City</span>
                   <input type="text" name="city" placeholder="City" class="box" maxlength="50" required>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Province</span>
                   <input type="text" name="state" placeholder="Province" class="box" maxlength="50" required>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Country</span>
                   <input type="text" name="country" placeholder="Country" value="South Africa" class="box" maxlength="50" required>
                </div>
-               <div class="inputBox col-6">
+               <div class="inputBox col-12 col-md-6">
                   <span>Zip code</span>
                   <input type="number" min="0" name="pin_code" placeholder="Zip code" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
                </div>

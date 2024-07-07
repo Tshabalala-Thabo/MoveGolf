@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
       <div class="form-container-inner" style="">
          <div class="container">
             <div class="row  justify-content-center">
-               <div class="col-6">
+               <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
 
                   <form action="" method="post">
                      <h3>Register</h3>
